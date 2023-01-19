@@ -1,10 +1,9 @@
 
 plugins {
-    id("com.github.rodm.teamcity-agent") version "1.4"
+    id("io.github.rodm.teamcity-agent")
 }
 
 group = "org.jetbrains.teamcity"
-
 version = rootProject.version
 
 val BUNDLED_TOOL_NAME = "kotlin.compiler.bundled"
