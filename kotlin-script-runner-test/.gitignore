@@ -1,0 +1,4 @@
+
+# Ignore teamcity-environments plugin directories
+data/
+servers/
