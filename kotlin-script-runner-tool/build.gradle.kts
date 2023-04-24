@@ -1,9 +1,8 @@
 
 plugins {
-    id("io.github.rodm.teamcity-agent")
+    id("teamcity.agent-tool")
 }
 
-group = "org.jetbrains.teamcity"
 version = rootProject.version
 
 val BUNDLED_TOOL_NAME = "kotlin.compiler.bundled"
@@ -40,8 +39,4 @@ teamcity {
             }
         }
     }
-}
-
-artifacts {
-    add("default", tasks.named("agentPlugin"))
 }
