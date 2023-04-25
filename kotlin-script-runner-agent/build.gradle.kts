@@ -7,7 +7,7 @@ version = rootProject.version
 
 dependencies {
     implementation(project(":kotlin-script-runner-common"))
-    provided("org.jetbrains.teamcity.internal:agent:${rootProject.extra["teamcityVersion"]}")
+    provided("org.jetbrains.teamcity.internal:agent:${teamcity.version}")
 
     testImplementation("io.mockk:mockk:1.10.0")
 }

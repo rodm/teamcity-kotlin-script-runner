@@ -12,8 +12,8 @@ dependencies {
     bundled (project(":kotlin-script-runner-tool"))
     implementation(project(":kotlin-script-runner-common"))
     implementation(kotlin("stdlib"))
-    provided("org.jetbrains.teamcity.internal:server:${rootProject.extra["teamcityVersion"]}")
-    provided("org.jetbrains.teamcity.internal:server-tools:${rootProject.extra["teamcityVersion"]}")
+    provided("org.jetbrains.teamcity.internal:server:${teamcity.version}")
+    provided("org.jetbrains.teamcity.internal:server-tools:${teamcity.version}")
 }
 
 teamcity {
