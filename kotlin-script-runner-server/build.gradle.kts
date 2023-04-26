@@ -3,8 +3,6 @@ plugins {
     id ("teamcity.server-plugin")
 }
 
-version = rootProject.version
-
 val bundled: Configuration by configurations.creating
 
 dependencies {

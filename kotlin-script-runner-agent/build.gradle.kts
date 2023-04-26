@@ -3,8 +3,6 @@ plugins {
     id ("teamcity.agent-plugin")
 }
 
-version = rootProject.version
-
 dependencies {
     implementation(project(":kotlin-script-runner-common"))
     provided("org.jetbrains.teamcity.internal:agent:${teamcity.version}")

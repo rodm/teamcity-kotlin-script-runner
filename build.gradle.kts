@@ -1,16 +1,10 @@
 
-import java.text.SimpleDateFormat
-import java.util.Date
 import com.github.jk1.license.render.JsonReportRenderer
 
 plugins {
     id ("teamcity.base")
     id ("com.github.jk1.dependency-license-report") version "1.17"
 }
-
-val timestamp = SimpleDateFormat("yyMMdd_HHmm").format(Date())
-val pluginVersion by extra(project.findProperty("PluginVersion") ?: "SNAPSHOT_${timestamp}")
-version = pluginVersion
 
 tasks.register<Copy>("pluginZip") {
     from("kotlin-script-runner-server/build/distributions/kotlin-script-runner.zip")
