@@ -1,6 +1,6 @@
 
 plugins {
-    id ("io.github.rodm.teamcity-environments")
+    id ("teamcity.environments")
 }
 
 extra["java11Home"] = project.findProperty("java11.home") ?: "/opt/jdk-11.0.2"
