@@ -3,8 +3,6 @@ plugins {
     id("teamcity.agent-tool")
 }
 
-version = rootProject.version
-
 val BUNDLED_TOOL_NAME = "kotlin.compiler.bundled"
 val BUNDLED_TOOL_VERSION = "1.5.0"
 
