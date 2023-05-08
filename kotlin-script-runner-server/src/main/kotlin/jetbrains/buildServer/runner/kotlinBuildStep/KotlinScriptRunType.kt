@@ -1,5 +1,5 @@
 /*
- * Copyright 2000-2021 JetBrains s.r.o.
+ * Copyright 2000-2022 JetBrains s.r.o.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -100,9 +100,17 @@ class KotlinScriptRunType(val pluginDescriptor: PluginDescriptor, runTypeRegistr
         }
     }
 
+    override fun getTags(): MutableSet<String> {
+        return mutableSetOf("script", "Kotlin")
+    }
+
     companion object {
         const val TYPE = "kotlinScript"
         const val DISPLAY_NAME = "Kotlin Script"
         const val DESCRIPTION = "Kotlin Script runner"
+    }
+
+    override fun getIconUrl(): String {
+        return this.pluginDescriptor.getPluginResourcesPath("kotlin_script.svg")
     }
 }

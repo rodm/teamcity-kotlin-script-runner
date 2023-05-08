@@ -4,7 +4,7 @@ plugins {
 }
 
 val BUNDLED_TOOL_NAME = "kotlin.compiler.bundled"
-val BUNDLED_TOOL_VERSION = "1.5.0"
+val BUNDLED_TOOL_VERSION = "1.7.10"
 
 repositories {
     ivy {

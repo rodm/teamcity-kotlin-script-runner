@@ -1,5 +1,5 @@
 /*
- * Copyright 2000-2021 JetBrains s.r.o.
+ * Copyright 2000-2022 JetBrains s.r.o.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ import jetbrains.buildServer.tools.ToolVersionIdHelper
 
 internal val SERVER_LOG = Loggers.SERVER
 
-internal val KOTLIN_BUNDLED_VERSION_NUMBER = "1.5.0"
+internal val KOTLIN_BUNDLED_VERSION_NUMBER = "1.7.10"
 internal val KOTLIN_BUNDLED_VERSION_ID = ToolVersionIdHelper.getToolId(KotlinToolType.INSTANCE, "bundled")
 internal val KOTLIN_COMPILER_PREFIX = "kotlin-compiler-"
 internal val DOT_ZIP = ".zip"
