@@ -10,7 +10,7 @@ plugins {
 group = "org.jetbrains.teamcity"
 
 val defaultVersion = "SNAPSHOT_${SimpleDateFormat("yyMMdd_HHmm").format(Date())}"
-version = project.findProject("PluginVersion") ?: defaultVersion
+version = project.findProperty("PluginVersion") ?: defaultVersion
 
 repositories {
     mavenCentral()
