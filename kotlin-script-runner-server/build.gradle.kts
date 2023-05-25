@@ -17,7 +17,7 @@ dependencies {
 teamcity {
     server {
         archiveName = "kotlin-script-runner"
-        descriptor = file("../teamcity-plugin.xml")
+        descriptor = file("teamcity-plugin.xml")
         tokens = mapOf("Version" to project.version)
 
         files {

@@ -27,7 +27,7 @@ dependencies {
 teamcity {
     agent {
         archiveName = BUNDLED_TOOL_NAME
-        descriptor = "tools/teamcity-plugin.xml"
+        descriptor = "teamcity-plugin.xml"
         files {
             from(zipTree(configurations["bundled"].singleFile)) {
                 includeEmptyDirs = false
